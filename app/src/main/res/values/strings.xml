@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="dey_of_week">День недели:</string>
+    <string name="hint_title">Заголовок заметки:</string>
+    <string name="hint_description">Описание заметки:</string>
+    <string name="button_save_note">Добавить заметку</string>
 </resources>
