@@ -75,22 +75,16 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         textViewTitle = itemView.findViewById(R.id.textViewTitle);
         textViewDescription = itemView.findViewById(R.id.textViewDescription);
         textViewData = itemView.findViewById(R.id.textViewData);
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(onNoteClickListener!=null){
-                    onNoteClickListener.onNoteClick(getAdapterPosition());
-                }
+        itemView.setOnClickListener(view -> {
+            if(onNoteClickListener!=null){
+                onNoteClickListener.onNoteClick(getAdapterPosition());
             }
         });
-        itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                if(onNoteClickListener!=null){
-                    onNoteClickListener.onLongClick(getAdapterPosition());
-                }
-                return true;
+        itemView.setOnLongClickListener(view -> {
+            if(onNoteClickListener!=null){
+                onNoteClickListener.onLongClick(getAdapterPosition());
             }
+            return true;
         });
 
         }
