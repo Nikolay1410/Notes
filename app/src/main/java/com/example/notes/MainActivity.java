@@ -6,24 +6,17 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.notes.adapters.NotesAdapter;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView recyclerViewNotes;
     private final ArrayList<Note> notes = new ArrayList<>();
     public NotesAdapter adapter;
     public NotesDBHelper dbHelper;
@@ -33,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerViewNotes = findViewById(R.id.recyclerViewNotes);
+        RecyclerView recyclerViewNotes = findViewById(R.id.recyclerViewNotes);
         dbHelper = new NotesDBHelper(this);
         database = dbHelper.getWritableDatabase();
         getData();
