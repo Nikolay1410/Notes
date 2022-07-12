@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNoteActivity">
+    tools:context=".EditActivity">
 
     <EditText
-        android:id="@+id/editTextTitle"
+        android:id="@+id/textTitleEdit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroupPriority" />
 
     <EditText
-        android:id="@+id/editTextDescription"
+        android:id="@+id/textDescriptionEdit"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:ems="10"
@@ -29,7 +29,7 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonSaveNote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitleEdit" />
 
     <RadioGroup
         android:id="@+id/radioGroupPriority"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -50,7 +50,7 @@
             android:text="1" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -58,12 +58,11 @@
             android:text="2" />
 
         <RadioButton
-            android:id="@+id/radioButton1"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/holo_green_light"
-            android:checked="true"
             android:text="3" />
     </RadioGroup>
 
@@ -71,8 +70,8 @@
         android:id="@+id/buttonSaveNote"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="onClickAddNote"
-        android:text="@string/button_save_note"
+        android:onClick="onClickEdit"
+        android:text="@string/edit_note"
         android:textColor="@color/white"
         app:backgroundTint="#5E3365"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,6 +90,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

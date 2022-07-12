@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         String[] whereArgs = new String[]{Integer.toString(id)};
         database.delete(NotesContract.NotesEntry.TABLE_NAME, where, whereArgs);
         getData();
-    };
+    }
 
     public void onClickAddNote(View view) {
         Intent intent = new Intent(this, AddNoteActivity.class);

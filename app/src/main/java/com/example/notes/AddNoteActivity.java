@@ -6,7 +6,6 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -21,7 +20,6 @@ public class AddNoteActivity extends AppCompatActivity {
     private EditText editTextDescription;
     private RadioGroup radioGroupPriority;
 
-    private NotesDBHelper dbHelper;
     private SQLiteDatabase database;
 
     @Override
@@ -31,7 +29,7 @@ public class AddNoteActivity extends AppCompatActivity {
         editTextTitle = findViewById(R.id.editTextTitle);
         editTextDescription = findViewById(R.id.editTextDescription);
         radioGroupPriority = findViewById(R.id.radioGroupPriority);
-        dbHelper = new NotesDBHelper(this);
+        NotesDBHelper dbHelper = new NotesDBHelper(this);
         database = dbHelper.getWritableDatabase();
     }
 

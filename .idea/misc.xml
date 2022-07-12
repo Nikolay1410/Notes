@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kalya/AndroidStudioProjects/GitHab/Notes/app/src/main/res/layout/activity_add_note.xml" value="0.22" />
-        <entry key="..\:/Users/kalya/AndroidStudioProjects/GitHab/Notes/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/kalya/AndroidStudioProjects/GitHab/Notes/app/src/main/res/layout/activity_edit.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/kalya/AndroidStudioProjects/GitHab/Notes/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/kalya/AndroidStudioProjects/GitHab/Notes/app/src/main/res/layout/note_item.xml" value="0.22" />
       </map>
     </option>
