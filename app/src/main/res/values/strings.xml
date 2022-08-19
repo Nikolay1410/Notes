@@ -6,4 +6,8 @@
     <string name="button_save_note">Добавить заметку</string>
     <string name="add_title">Выберите приоритет заметки</string>
     <string name="edit_note">Изменить заметку</string>
+    <string name="one">1</string>
+    <string name="too">2</string>
+    <string name="fry">3</string>
+    <string name="button_sort">Кнопка сортировки</string>
 </resources>

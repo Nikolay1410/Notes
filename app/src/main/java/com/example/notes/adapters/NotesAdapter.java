@@ -13,7 +13,7 @@ import com.example.notes.R;
 import java.util.ArrayList;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> {
-    private ArrayList<Note> notes;
+    private final ArrayList<Note> notes;
     private OnNoteClickListener onNoteClickListener;
 
     public NotesAdapter(ArrayList<Note> notes) {
@@ -66,9 +66,9 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     }
 
     class NotesViewHolder extends RecyclerView.ViewHolder {
-        private TextView textViewTitle;
-        private TextView textViewDescription;
-        private TextView textViewData;
+        private final TextView textViewTitle;
+        private final TextView textViewDescription;
+        private final TextView textViewData;
 
     public NotesViewHolder(@NonNull View itemView) {
         super(itemView);

@@ -1,11 +1,11 @@
 package com.example.notes;
 
 public class Note {
-    private int id;
-    private String title;
-    private String description;
-    private String data;
-    private int priority;
+    private final int id;
+    private final String title;
+    private final String description;
+    private final String data;
+    private final int priority;
 
     public Note(int id, String title, String description, String data, int priority) {
         this.id = id;

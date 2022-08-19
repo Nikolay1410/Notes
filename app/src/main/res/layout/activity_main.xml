@@ -26,7 +26,10 @@
         app:backgroundTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/plus" />
+        app:srcCompat="@drawable/plus"
+        android:contentDescription="@string/button_sort"
+        android:focusable="true"
+        tools:ignore="UsingOnClickInXml" />
 
     <Switch
         android:id="@+id/switchPriority"
