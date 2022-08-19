@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         textViewNoteData = findViewById(R.id.textViewNoteData);
         textViewPriority = findViewById(R.id.textViewPriority);
         Intent intentDell = getIntent();
+
         dbHelper = new NotesDBHelper(this);
         database = dbHelper.getWritableDatabase();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
