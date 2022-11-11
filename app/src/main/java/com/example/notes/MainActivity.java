@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.example.notes.adapters.NotesAdapter;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private final ArrayList<Note> notes = new ArrayList<>();
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             adapter.notifyDataSetChanged();
         }
 
-        if (sortBy.contains("data ASC") || sortBy.contains("data DESC")){
+        if (Objects.equals(sortBy, "data ASC") || Objects.equals(sortBy, "data DESC")){
             switchPriority.setChecked(false);
             textViewNoteData.setTextColor(getResources().getColor(R.color.my_color));
             textViewPriority.setTextColor(getResources().getColor(R.color.black));
